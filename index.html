@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearPay | Instant B2B Factoring & Vistula University 40-Slide Business Plan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .slide-card {
+      aspect-ratio: 16 / 9;
+      position: relative;
+      overflow: hidden;
+    }
+    @media print {
+      body {
+        background: white !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      #tab-sme, #tab-investor {
+        display: none !important;
+      }
+      #tab-slides {
+        display: block !important;
+      }
+      #all-slides-grid {
+        display: block !important;
+      }
+      .slide-page {
+        page-break-after: always;
+        break-after: page;
+        width: 100%;
+        height: 92vh;
+        margin-bottom: 0 !important;
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+      }
+      @page {
+        size: landscape;
+        margin: 0.4cm;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- TOP NAVIGATION BAR -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 no-print shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-500 to-emerald-500 flex items-center justify-center text-white font-extrabold text-xl shadow-md">
+          CP
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-lg tracking-tight text-slate-900">ClearPay Financial</span>
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-sky-100 text-sky-800 border border-sky-200">Vistula University • ID: 78468</span>
+          </div>
+          <p class="text-xs text-slate-500">Instant B2B Invoice Factoring & Working Capital FinTech (Poland & CEE)</p>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="flex items-center gap-2 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
+        <button onclick="switchTab('sme')" id="btn-sme" class="px-4 py-2 rounded-lg text-sm font-bold transition-all bg-white text-sky-700 shadow-sm">
+          1. Live SME Factoring Demo
+        </button>
+        <button onclick="switchTab('investor')" id="btn-investor" class="px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-600 hover:text-slate-900">
+          2. Investor & Equity Portal
+        </button>
+        <button onclick="switchTab('slides')" id="btn-slides" class="px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-600 hover:text-slate-900">
+          3. 40-Slide Business Plan (PDF)
+        </button>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button onclick="printFullDeck()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
+          <span>🖨️ Save 40-Page PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8">
+
+    <!-- ========================================== -->
+    <!-- TAB 1: LIVE SME FACTORING DEMO             -->
+    <!-- ========================================== -->
+    <section id="tab-sme" class="space-y-8">
+      <!-- Bright Hero Banner with Photo Background -->
+      <div class="relative rounded-3xl overflow-hidden shadow-lg border border-sky-100 bg-white">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-sky-50/80"></div>
+        <div class="relative p-8 sm:p-10 grid md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">
+              <span>⚡ Live Interactive Prototype • KSeF Poland API Connected</span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+              Turn 60-Day Unpaid B2B Invoices into <span class="text-sky-600">Instant Cash in 10 Seconds.</span>
+            </h1>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Experience the ClearPay portal. Select a verified Polish B2B invoice below, adjust the invoice value or maturity term, and see our real-time accounting breakdown (3% commission, Coface credit insurance, and 53% net profit margin).
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+              <div class="bg-white/90 border border-slate-200 px-4 py-2.5 rounded-xl shadow-sm">
+                <span class="block text-xs text-slate-500 font-semibold">Average Payout Speed</span>
+                <span class="text-lg font-extrabold text-slate-900">10 Seconds (Instant)</span>
+              </div>
+              <div class="bg-white/90 border border-slate-200 px-4 py-2.5 rounded-xl shadow-sm">
+                <span class="block text-xs text-slate-500 font-semibold">Credit Protection</span>
+                <span class="text-lg font-extrabold text-emerald-600">90% Coface Insured</span>
+              </div>
+              <div class="bg-white/90 border border-slate-200 px-4 py-2.5 rounded-xl shadow-sm">
+                <span class="block text-xs text-slate-500 font-semibold">Capital Velocity</span>
+                <span class="text-lg font-extrabold text-sky-600">6x Turns / Year (18% Gross)</span>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-5">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80" alt="Financial Dashboard" class="rounded-2xl shadow-md border border-white object-cover h-64 w-full" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Calculator & KSeF Verification -->
+      <div class="grid lg:grid-cols-12 gap-8">
+        <!-- Left Column: Invoice Selection & Sliders -->
+        <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+            <div>
+              <h2 class="text-xl font-extrabold text-slate-900">Step 1: Select or Customize Verified Invoice</h2>
+              <p class="text-xs text-slate-500">Connected to Poland's National e-Invoicing System (KSeF) & PSD2 Open Banking</p>
+            </div>
+            <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-lg">
+              <button onclick="setCurrency('EUR')" id="curr-eur" class="px-3 py-1 rounded text-xs font-bold bg-white text-slate-900 shadow-sm">EUR (€)</button>
+              <button onclick="setCurrency('PLN')" id="curr-pln" class="px-3 py-1 rounded text-xs font-bold text-slate-600">PLN (zł)</button>
+            </div>
+          </div>
+
+          <!-- Sample Corporate Debtors -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Select Corporate Debtor (Payer Rated by ClearPay AI):</label>
+            <div class="grid sm:grid-cols-3 gap-3">
+              <button onclick="selectDebtor('Biedronka (Jeronimo Martins)', 'NIP 779-10-11-327', 'AAA (0.08% Risk)', 10000, 60)" class="text-left p-3 rounded-xl border-2 border-sky-500 bg-sky-50/60 hover:bg-sky-50 transition" id="debtor-1">
+                <span class="text-xs font-bold text-sky-700 block">Retail Giant</span>
+                <span class="font-extrabold text-sm text-slate-900 block truncate">Biedronka Poland</span>
+                <span class="text-[11px] text-emerald-700 font-semibold">Rating: AAA • 60 Days</span>
+              </button>
+              <button onclick="selectDebtor('DHL Parcel Polska Sp. z o.o.', 'NIP 527-21-80-899', 'AA+ (0.12% Risk)', 25000, 60)" class="text-left p-3 rounded-xl border border-slate-200 hover:border-sky-400 transition" id="debtor-2">
+                <span class="text-xs font-bold text-slate-500 block">Logistics Leader</span>
+                <span class="font-extrabold text-sm text-slate-900 block truncate">DHL Parcel Polska</span>
+                <span class="text-[11px] text-emerald-700 font-semibold">Rating: AA+ • 60 Days</span>
+              </button>
+              <button onclick="selectDebtor('Carrefour Polska Sp. z o.o.', 'NIP 937-21-61-245', 'AA (0.15% Risk)', 5000, 30)" class="text-left p-3 rounded-xl border border-slate-200 hover:border-sky-400 transition" id="debtor-3">
+                <span class="text-xs font-bold text-slate-500 block">Supermarket Chain</span>
+                <span class="font-extrabold text-sm text-slate-900 block truncate">Carrefour Polska</span>
+                <span class="text-[11px] text-emerald-700 font-semibold">Rating: AA • 30 Days</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Amount Slider -->
+          <div class="space-y-2 pt-2">
+            <div class="flex justify-between items-center">
+              <label class="text-sm font-bold text-slate-700">Invoice Face Value:</label>
+              <span id="invoice-amount-display" class="text-2xl font-extrabold text-sky-600">€10,000</span>
+            </div>
+            <input type="range" id="invoice-slider" min="1000" max="100000" step="1000" value="10000" oninput="updateFactoringCalc()" class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-600" />
+            <div class="flex justify-between text-xs text-slate-400 font-medium">
+              <span>1,000</span>
+              <span>25,000</span>
+              <span>50,000</span>
+              <span>100,000</span>
+            </div>
+          </div>
+
+          <!-- Payment Term Toggle -->
+          <div class="space-y-2">
+            <label class="text-sm font-bold text-slate-700 block">Invoice Payment Maturity Term:</label>
+            <div class="grid grid-cols-3 gap-3">
+              <button onclick="setTerm(30)" id="term-30" class="py-2.5 px-4 rounded-xl border border-slate-200 text-sm font-bold text-slate-600 hover:border-sky-400">30 Days (2.0% Fee)</button>
+              <button onclick="setTerm(60)" id="term-60" class="py-2.5 px-4 rounded-xl border-2 border-sky-600 bg-sky-50 text-sm font-bold text-sky-700">60 Days (3.0% Fee)</button>
+              <button onclick="setTerm(90)" id="term-90" class="py-2.5 px-4 rounded-xl border border-slate-200 text-sm font-bold text-slate-600 hover:border-sky-400">90 Days (4.2% Fee)</button>
+            </div>
+          </div>
+
+          <!-- KSeF Verification Status Box -->
+          <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 flex items-center justify-between">
+            <div class="space-y-0.5">
+              <span class="text-xs font-bold text-slate-400 uppercase">Verified Corporate Debtor</span>
+              <p id="selected-debtor-name" class="font-extrabold text-slate-800 text-sm">Biedronka (Jeronimo Martins) • NIP 779-10-11-327</p>
+              <p id="selected-debtor-risk" class="text-xs text-emerald-600 font-semibold">✓ KSeF e-Invoice Hash Validated • Credit Rating: AAA (0.08% Risk)</p>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold">APPROVED</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Real-Time Payout & ClearPay Accounting Breakdown -->
+        <div class="lg:col-span-5 bg-gradient-to-b from-sky-900 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-sky-300">Instant SME Payout Summary</span>
+              <span class="text-xs bg-white/10 px-2.5 py-1 rounded-full text-emerald-300 font-semibold">PSD2 Instant Wire</span>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur rounded-2xl p-5 border border-white/15">
+              <span class="text-xs text-sky-200 block">Immediate Cash Transferred to SME (97.0%):</span>
+              <div id="sme-payout-display" class="text-4xl font-extrabold text-emerald-400 mt-1">€9,700.00</div>
+              <p class="text-xs text-sky-200 mt-2">Disbursed in <strong>10 seconds</strong> to SME Bank Pekao / Revolut IBAN.</p>
+            </div>
+
+            <!-- Accounting & Unit Economics Breakdown (For Professor) -->
+            <div class="space-y-2.5 pt-2">
+              <h3 class="text-xs font-bold uppercase tracking-wider text-sky-300 border-b border-white/10 pb-1.5">
+                ClearPay Unit Economics (Finance & Accounting View)
+              </h3>
+              <div class="flex justify-between text-sm">
+                <span class="text-slate-300">Gross Factoring Fee (<span id="fee-pct-label">3.0%</span>):</span>
+                <span id="gross-fee-display" class="font-bold text-white">+ €300.00</span>
+              </div>
+              <div class="flex justify-between text-xs text-slate-300">
+                <span>(-) Senior Bank Debt Cost (6% p.a. pro-rata):</span>
+                <span id="capital-cost-display" class="text-rose-300">- €100.00</span>
+              </div>
+              <div class="flex justify-between text-xs text-slate-300">
+                <span>(-) Coface Credit Insurance & Banking Fees (0.25%):</span>
+                <span id="insurance-cost-display" class="text-rose-300">- €25.00</span>
+              </div>
+              <div class="flex justify-between text-xs text-slate-300">
+                <span>(-) Default Risk Provision (0.15%):</span>
+                <span id="risk-cost-display" class="text-rose-300">- €15.00</span>
+              </div>
+              <div class="border-t border-white/20 pt-2 flex justify-between items-center">
+                <span class="text-sm font-extrabold text-emerald-300">ClearPay Net Profit (53.3% Net Margin):</span>
+                <span id="net-profit-display" class="text-xl font-extrabold text-emerald-400">+ €160.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <button onclick="triggerInstantPayout()" class="w-full py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-base shadow-lg transition transform active:scale-95">
+              ⚡ Execute Instant 10-Second Payout Now
+            </button>
+            <div id="payout-toast" class="hidden bg-emerald-500/20 border border-emerald-400 text-emerald-200 text-xs font-bold p-3 rounded-xl text-center">
+              ✓ Instant Transfer Completed! Funds settled via Elixir / SEPA Instant in 8.4 seconds.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 2: INVESTOR & EQUITY PORTAL            -->
+    <!-- ========================================== -->
+    <section id="tab-investor" class="hidden space-y-8">
+      <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-extrabold uppercase">Seed Investment Round • Vistula Venture Showcase</span>
+          <h2 class="text-3xl font-extrabold text-slate-900">Invest in High-Velocity B2B Working Capital</h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            ClearPay combines <strong>equity seed funding (€150,000 for 15% equity)</strong> with a <strong>revolving bank credit facility (€500,000 at 6% p.a.)</strong>. Because the average invoice matures in 60 days, every €1 of liquidity turns <strong>6 times per year</strong>, generating an <strong>18% gross annual yield</strong>.
+          </p>
+          <div class="grid sm:grid-cols-3 gap-4 pt-2">
+            <div class="p-4 rounded-2xl bg-sky-50 border border-sky-100">
+              <span class="text-xs text-sky-700 font-bold block">Pre-Money Valuation</span>
+              <span class="text-2xl font-extrabold text-slate-900">€850,000</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
+              <span class="text-xs text-emerald-700 font-bold block">Seed Equity Ask</span>
+              <span class="text-2xl font-extrabold text-emerald-700">€150,000 (15%)</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-amber-50 border border-amber-100">
+              <span class="text-xs text-amber-700 font-bold block">Break-Even Point</span>
+              <span class="text-2xl font-extrabold text-amber-700">Month 8</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Investor Analytics" class="rounded-2xl shadow-md object-cover h-64 w-full" />
+        </div>
+      </div>
+
+      <!-- Interactive Equity & ROI Simulator -->
+      <div class="grid lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          <h3 class="text-xl font-extrabold text-slate-900">Interactive Investor Ticket Simulator</h3>
+          <div class="space-y-2">
+            <div class="flex justify-between">
+              <label class="text-sm font-bold text-slate-700">Simulated Investment Amount:</label>
+              <span id="invest-ticket-display" class="text-2xl font-extrabold text-emerald-600">€150,000</span>
+            </div>
+            <input type="range" id="invest-slider" min="15000" max="150000" step="15000" value="150000" oninput="updateInvestorCalc()" class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600" />
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-xs text-slate-500 font-bold">Equity Stake Acquired</span>
+              <div id="invest-equity-display" class="text-2xl font-extrabold text-slate-900 mt-1">15.0%</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-xs text-slate-500 font-bold">Year 3 Projected Net Profit</span>
+              <div class="text-2xl font-extrabold text-sky-600 mt-1">€620,000</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200">
+              <span class="text-xs text-emerald-700 font-bold">Your Year 3 Profit Share</span>
+              <div id="invest-dividend-display" class="text-2xl font-extrabold text-emerald-700 mt-1">€93,000 / yr</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-sky-50 border border-sky-200">
+              <span class="text-xs text-sky-700 font-bold">Projected 3-Year Exit Value (8x P/E)</span>
+              <div id="invest-exit-display" class="text-2xl font-extrabold text-sky-700 mt-1">€744,000 (4.9x ROI)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Year Financial Projections Table -->
+        <div class="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+          <h3 class="text-xl font-extrabold text-slate-900">3-Year Pro Forma P&L Summary</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-sm">
+              <thead>
+                <tr class="border-b-2 border-slate-200 text-slate-500 text-xs uppercase">
+                  <th class="py-3">Financial Metric</th>
+                  <th class="py-3">Year 1 (2027)</th>
+                  <th class="py-3">Year 2 (2028)</th>
+                  <th class="py-3 text-emerald-700">Year 3 (2029)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 font-medium">
+                <tr>
+                  <td class="py-3 font-bold text-slate-800">Factored Invoice Volume</td>
+                  <td class="py-3">€6,000,000</td>
+                  <td class="py-3">€22,000,000</td>
+                  <td class="py-3 font-bold text-slate-900">€50,000,000</td>
+                </tr>
+                <tr>
+                  <td class="py-3 font-bold text-slate-800">Gross Revenue (3% Fee)</td>
+                  <td class="py-3">€180,000</td>
+                  <td class="py-3">€660,000</td>
+                  <td class="py-3 font-bold text-sky-600">€1,500,000</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-slate-600">Direct Cost of Capital & Ins. (1.4%)</td>
+                  <td class="py-3">-€84,000</td>
+                  <td class="py-3">-€308,000</td>
+                  <td class="py-3">-€700,000</td>
+                </tr>
+                <tr>
+                  <td class="py-3 font-bold text-slate-800">Net Spread (Gross Profit)</td>
+                  <td class="py-3">€96,000</td>
+                  <td class="py-3">€352,000</td>
+                  <td class="py-3 font-bold">€800,000</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-slate-600">Operating Expenses (OpEx)</td>
+                  <td class="py-3">-€111,000</td>
+                  <td class="py-3">-€157,000</td>
+                  <td class="py-3">-€180,000</td>
+                </tr>
+                <tr class="bg-emerald-50/70">
+                  <td class="py-3 font-extrabold text-emerald-900">Net Profit (After Tax)</td>
+                  <td class="py-3 font-bold text-rose-600">-€15,000</td>
+                  <td class="py-3 font-bold text-emerald-700">+€195,000</td>
+                  <td class="py-3 font-extrabold text-emerald-700">+€620,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-slate-500">
+            *Break-even point is achieved in <strong>Month 8 of Year 1</strong> at €750,000 monthly factored volume (150 SMEs × €5,000/month).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 3: 40-SLIDE BUSINESS PLAN DECK         -->
+    <!-- ========================================== -->
+    <section id="tab-slides" class="hidden space-y-6">
+      <!-- Controls Header (Hidden when printing) -->
+      <div class="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200 shadow-sm flex flex-wrap items-center justify-between gap-4 no-print">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-sky-600">Vistula University • Assignment 2 Complete Deliverable</span>
+          <h2 class="text-xl font-extrabold text-slate-900">40-Slide Business Plan (8 Slides per Section × 5 Required Sections)</h2>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="filterSection('ALL')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white" id="sec-ALL">All 40 Slides</button>
+          <button onclick="filterSection(1)" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200" id="sec-1">Part 1: Overview (1-8)</button>
+          <button onclick="filterSection(2)" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200" id="sec-2">Part 2: Market (9-16)</button>
+          <button onclick="filterSection(3)" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200" id="sec-3">Part 3: Tech & Ops (17-24)</button>
+          <button onclick="filterSection(4)" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200" id="sec-4">Part 4: Org & Staff (25-32)</button>
+          <button onclick="filterSection(5)" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200" id="sec-5">Part 5: Financials (33-40)</button>
+        </div>
+      </div>
+
+      <!-- Slides Container -->
+      <div id="all-slides-grid" class="grid grid-cols-1 gap-8"></div>
+    </section>
+
+  </main>
+
+  <script>
+    // =====================================================
+    // INTERACTIVE PROTOTYPE LOGIC
+    // =====================================================
+    let currentCurrency = 'EUR';
+    let currentTerm = 60;
+    const plnRate = 4.30;
+
+    function switchTab(tab) {
+      document.getElementById('tab-sme').classList.add('hidden');
+      document.getElementById('tab-investor').classList.add('hidden');
+      document.getElementById('tab-slides').classList.add('hidden');
+
+      document.getElementById('btn-sme').className = 'px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-600 hover:text-slate-900';
+      document.getElementById('btn-investor').className = 'px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-600 hover:text-slate-900';
+      document.getElementById('btn-slides').className = 'px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-600 hover:text-slate-900';
+
+      document.getElementById('tab-' + tab).classList.remove('hidden');
+      document.getElementById('btn-' + tab).className = 'px-4 py-2 rounded-lg text-sm font-bold transition-all bg-white text-sky-700 shadow-sm';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function formatMoney(amountEur) {
+      const val = currentCurrency === 'PLN' ? amountEur * plnRate : amountEur;
+      const sym = currentCurrency === 'PLN' ? ' PLN' : '€';
+      return currentCurrency === 'PLN'
+        ? val.toLocaleString('en-US', { maximumFractionDigits: 0 }) + sym
+        : sym + val.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function setCurrency(curr) {
+      currentCurrency = curr;
+      document.getElementById('curr-eur').className = curr === 'EUR' ? 'px-3 py-1 rounded text-xs font-bold bg-white text-slate-900 shadow-sm' : 'px-3 py-1 rounded text-xs font-bold text-slate-600';
+      document.getElementById('curr-pln').className = curr === 'PLN' ? 'px-3 py-1 rounded text-xs font-bold bg-white text-slate-900 shadow-sm' : 'px-3 py-1 rounded text-xs font-bold text-slate-600';
+      updateFactoringCalc();
+    }
+
+    function setTerm(days) {
+      currentTerm = days;
+      [30, 60, 90].forEach(d => {
+        document.getElementById('term-' + d).className = d === days
+          ? 'py-2.5 px-4 rounded-xl border-2 border-sky-600 bg-sky-50 text-sm font-bold text-sky-700'
+          : 'py-2.5 px-4 rounded-xl border border-slate-200 text-sm font-bold text-slate-600 hover:border-sky-400';
+      });
+      updateFactoringCalc();
+    }
+
+    function selectDebtor(name, nip, rating, amount, term) {
+      document.getElementById('selected-debtor-name').innerText = `${name} • ${nip}`;
+      document.getElementById('selected-debtor-risk').innerText = `✓ KSeF e-Invoice Hash Validated • Credit Rating: ${rating}`;
+      document.getElementById('invoice-slider').value = amount;
+      setTerm(term);
+    }
+
+    function updateFactoringCalc() {
+      const baseAmount = parseFloat(document.getElementById('invoice-slider').value);
+      const feePct = currentTerm === 30 ? 0.02 : currentTerm === 60 ? 0.03 : 0.042;
+      const capitalCostPct = (0.06 / 360) * currentTerm; // 6% annual bank line pro-rata
+      const insurancePct = 0.0025;
+      const riskPct = 0.0015;
+
+      const grossFee = baseAmount * feePct;
+      const smePayout = baseAmount - grossFee;
+      const capCost = baseAmount * capitalCostPct;
+      const insCost = baseAmount * insurancePct;
+      const riskCost = baseAmount * riskPct;
+      const netProfit = grossFee - capCost - insCost - riskCost;
+
+      document.getElementById('invoice-amount-display').innerText = formatMoney(baseAmount);
+      document.getElementById('sme-payout-display').innerText = formatMoney(smePayout);
+      document.getElementById('fee-pct-label').innerText = (feePct * 100).toFixed(1) + '%';
+      document.getElementById('gross-fee-display').innerText = '+ ' + formatMoney(grossFee);
+      document.getElementById('capital-cost-display').innerText = '- ' + formatMoney(capCost);
+      document.getElementById('insurance-cost-display').innerText = '- ' + formatMoney(insCost);
+      document.getElementById('risk-cost-display').innerText = '- ' + formatMoney(riskCost);
+      document.getElementById('net-profit-display').innerText = '+ ' + formatMoney(netProfit);
+    }
+
+    function triggerInstantPayout() {
+      const toast = document.getElementById('payout-toast');
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 5000);
+    }
+
+    function updateInvestorCalc() {
+      const ticket = parseFloat(document.getElementById('invest-slider').value);
+      const equityPct = (ticket / 1000000) * 100; // €1M Post-money valuation (€850k pre + €150k seed)
+      const y3NetProfit = 620000;
+      const profitShare = y3NetProfit * (equityPct / 100);
+      const exitVal = (y3NetProfit * 8) * (equityPct / 100);
+
+      document.getElementById('invest-ticket-display').innerText = '€' + ticket.toLocaleString();
+      document.getElementById('invest-equity-display').innerText = equityPct.toFixed(1) + '%';
+      document.getElementById('invest-dividend-display').innerText = '€' + Math.round(profitShare).toLocaleString() + ' / yr';
+      document.getElementById('invest-exit-display').innerText = '€' + Math.round(exitVal).toLocaleString() + ' (4.9x ROI)';
+    }
+
+    // =====================================================
+    // 40-SLIDE BUSINESS PLAN DATA (8 SLIDES PER SECTION)
+    // =====================================================
+    const bgPhotos = [
+      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=80'
+    ];
+
+    const slidesData = [
+      // PART 1: BUSINESS OVERVIEW (Slides 1-8)
+      { num: 1, part: 1, partTitle: "1. Business Overview", title: "ClearPay Financial — Executive Title Cover", subtitle: "Vistula University • 2026 Fall Semester Assignment 2: Business Plan", bullets: ["Presenter: Hakka Feriel Zohra (Student ID: 78468) — B.Sc. in Finance & Accounting", "Instructor: Prof. Nurettin Can (Submission: n.can@vistula.edu.pl | Deadline: Nov 15, 2026)", "Concept: AI-Powered Instant B2B Invoice Factoring & Working Capital FinTech Platform", "Interactive Prototype Integrated: Live SME Payout Calculator & Investor Equity Simulator"], kpi: "10-Second B2B Invoice Payout" },
+      { num: 2, part: 1, partTitle: "1. Business Overview", title: "Executive Summary", subtitle: "Solving Central Europe's €200B+ Working Capital Bottleneck", bullets: ["Problem: Polish & European SMEs wait 30 to 90 days to get paid after issuing B2B invoices.", "Solution: ClearPay advances 97% of verified B2B invoices in 10 seconds via KSeF API.", "Revenue Model: Transparent 2.0% to 3.0% factoring fee per invoice; 6x annual capital velocity.", "Financial Target: Break-even in Month 8; €50M factored volume and €620k net profit by Year 3."], kpi: "18% Gross Annual Capital Yield" },
+      { num: 3, part: 1, partTitle: "1. Business Overview", title: "The Macroeconomic Problem: The 60-Day Cash Flow Trap", subtitle: "Why Profitable SMEs Fail Due to Late Corporate Payments", bullets: ["Over 48% of Polish SMEs experience liquidity stress caused by 60-day payment terms.", "1 in 4 SME bankruptcies in Europe occurs despite profitable order books due to cash gaps.", "Transport, IT agencies, and FMCG suppliers must pay fuel and salaries upfront while waiting months.", "Traditional banks require 3–4 weeks of paperwork and reject small or single-invoice financing."], kpi: "60 Days Average B2B Payment Delay" },
+      { num: 4, part: 1, partTitle: "1. Business Overview", title: "Description of the Product & Service", subtitle: "How ClearPay Instant Micro-Factoring Works in 3 Clicks", bullets: ["Step 1: SME connects accounting software or uploads a KSeF-verified invoice (e.g., €10,000).", "Step 2: ClearPay AI verifies the corporate debtor's credit rating (e.g., Biedronka/DHL) in 10 seconds.", "Step 3: 97% (€9,700) is wired immediately to the SME; ClearPay collects 100% at maturity (60 days).", "Zero debt added to the SME's balance sheet (non-recourse factoring insured by Coface)."], kpi: "97% Immediate Cash Advance" },
+      { num: 5, part: 1, partTitle: "1. Business Overview", title: "Unique Value Proposition (Dual Ecosystem Benefit)", subtitle: "Creating Simultaneous Value for SME Suppliers & Large Corporate Buyers", bullets: ["For SME Suppliers: Instant working capital in 10 seconds, no collateral, 100% digital onboarding.", "For Corporate Debtors: Stronger supply chain stability without shortening their own 60-day treasury cycle.", "For Partner Accountants: Automated reconciliation and 0.2% referral commission stream.", "Transparent flat fee (2%–3%) with zero hidden maintenance or legal setup fees."], kpi: "Zero Balance-Sheet Debt for SMEs" },
+      { num: 6, part: 1, partTitle: "1. Business Overview", title: "Vision, Mission & Strategic Positioning", subtitle: "Building Central & Eastern Europe's Leading Working Capital Infrastructure", bullets: ["Mission: Eliminate B2B payment waiting times so entrepreneurs can focus on growth, not collections.", "Vision: Become the #1 embedded instant-payout button inside every Polish & CEE invoicing platform.", "Core Values: Financial Transparency, Algorithmic Speed, Institutional Risk Discipline.", "Positioned at the intersection of Poland's mandatory KSeF e-invoicing reform and PSD2 Open Banking."], kpi: "#1 Embedded B2B Payout Button" },
+      { num: 7, part: 1, partTitle: "1. Business Overview", title: "Short, Medium & Long-Term Business Goals", subtitle: "Measurable Milestones Across Years 1, 2, and 3", bullets: ["Short-Term (Months 1–8): Launch MVP in Warsaw, onboard first 150 SMEs, reach break-even (€750k/mo volume).", "Medium-Term (Year 2): Integrate with top 5 Polish ERP/invoicing tools (fakturownia, inFakt), hit €22M volume.", "Long-Term (Year 3): Expand across CEE (Czechia, Baltic States), process €50M/year, generate €620k net profit.", "Maintain portfolio default rate strictly below 0.15% via Coface credit insurance."], kpi: "Month 8 Operational Break-Even" },
+      { num: 8, part: 1, partTitle: "1. Business Overview", title: "Legal Structure, Licensing & Corporate Governance", subtitle: "Regulatory Compliance in Poland (Sp. z o.o. & KNF Registration)", bullets: ["Incorporated in Warsaw, Poland as ClearPay Financial Sp. z o.o. (Limited Liability Company).", "Factoring operations structured under Polish Civil Code & registered as a Domestic Payment/Lending Institution.", "Client funds segregated in escrow accounts with Bank Pekao S.A. to guarantee institutional security.", "External annual financial audit and GDPR / AML (Anti-Money Laundering) compliance board."], kpi: "100% Segregated Escrow Accounts" },
+
+      // PART 2: MARKET AND MARKETING (Slides 9-16)
+      { num: 9, part: 2, partTitle: "2. Market and Marketing", title: "Product & Service Marketplace Overview", subtitle: "Poland & European Factoring Industry Analysis", bullets: ["European factoring volume exceeds €2,000 Billion annually, growing at 8.5% CAGR.", "Poland is the fastest-growing factoring hub in CEE (over 450 Billion PLN factored annually via PZF).", "However, 85% of traditional factoring serves large corporations, leaving micro-SMEs underserved.", "ClearPay captures the high-margin 'Micro & SME Spot-Factoring' blue ocean segment."], kpi: "450B+ PLN Polish Factoring Market" },
+      { num: 10, part: 2, partTitle: "2. Market and Marketing", title: "Market Sizing: TAM, SAM, and SOM", subtitle: "Bottom-Up Quantitative Market Opportunity", bullets: ["TAM (Total Addressable Market): €2.0 Trillion European B2B Factoring & Working Capital market.", "SAM (Serviceable Available Market): €18 Billion Polish SME spot-invoice financing market.", "SOM Year 1: €6 Million factored invoice volume (150–200 active SMEs) = €180,000 gross fee revenue.", "SOM Year 3: €50 Million factored invoice volume (850+ active SMEs) = €1,500,000 gross fee revenue."], kpi: "€50M Year 3 SOM Target Volume" },
+      { num: 11, part: 2, partTitle: "2. Market and Marketing", title: "Target Customers & B2B Segmentation", subtitle: "High-Frequency Invoice Generators Facing Cash Gaps", bullets: ["Segment A (45%): Road Transport & Logistics SMEs (immediate fuel/driver costs vs. 60-day freight bills).", "Segment B (35%): IT Software Houses, Marketing Agencies & B2B Freelancers (monthly payroll pressure).", "Segment C (20%): Wholesale Food, Packaging & Commercial Maintenance Suppliers to retail chains.", "Ideal Customer Profile (ICP): Polish SMEs with €150k–€3M annual turnover billing AAA/AA corporations."], kpi: "3 Core High-Margin SME Segments" },
+      { num: 12, part: 2, partTitle: "2. Market and Marketing", title: "Regulatory Catalyst: Why Now?", subtitle: "Poland's National e-Invoicing System (KSeF) & PSD2 Open Banking", bullets: ["Poland's KSeF (Krajowy System e-Faktur) standardizes structured XML invoices across all businesses.", "Historically, invoice fraud (fake invoices) was the #1 risk in factoring. KSeF eliminates this instantly.", "PSD2 Open Banking APIs allow ClearPay to read 12 months of SME cash flows in 3 seconds.", "Combining KSeF + PSD2 lowers underwriting cost per invoice from €45 (manual bank) to €0.20 (AI)."], kpi: "99.5% Reduction in Underwriting Cost" },
+      { num: 13, part: 2, partTitle: "2. Market and Marketing", title: "Competitive Landscape & Benchmarking", subtitle: "Why ClearPay Beats Traditional Banks and Legacy Factors", bullets: ["Traditional Banks (PKO, Pekao Factoring): Lower rates, but require 3 weeks approval & whole-turnover lock-in.", "Legacy FinTechs (SMEO, PragmaGO): Faster than banks, but still require manual credit reviews (24–48 hrs).", "ClearPay Advantage: 10-second automated payout, single-invoice flexibility, embedded ERP button.", "Debtor-centric underwriting allows brand-new SMEs to get funded if their client is a reputable corporation."], kpi: "10 Seconds vs. 3 Weeks Bank Wait" },
+      { num: 14, part: 2, partTitle: "2. Market and Marketing", title: "Comprehensive SWOT Analysis", subtitle: "Internal Strengths/Weaknesses & External Opportunities/Threats", bullets: ["Strengths: 10-second KSeF AI scoring, 6x capital velocity, Coface 90% insurance protection.", "Weaknesses: High reliance on external debt line (€500k bank facility) to scale volume.", "Opportunities: Mandatory e-invoicing across EU (ViDA directive), embedded SaaS partnerships.", "Threats: Rising central bank interest rates (mitigated by dynamic fee pass-through pricing)."], kpi: "90% Credit Risk Transferred" },
+      { num: 15, part: 2, partTitle: "2. Market and Marketing", title: "Go-To-Market & B2B Marketing Strategy", subtitle: "Low-CAC Acquisition via Embedded Finance & Accounting Channels", bullets: ["Channel 1 (Embedded API): 'Get Paid Instantly with ClearPay' button inside invoicing SaaS tools.", "Channel 2 (Accountant Partner Network): 0.2% recurring commission to Polish accounting offices (Biura Rachunkowe).", "Channel 3 (Direct Digital B2B): LinkedIn & Google Search targeting 'Faktoring online' and logistics forums.", "Freemium Debtor Check tool: SMEs can check any Polish company's payment score for free on our website."], kpi: "0.2% Referral Fee to Accountants" },
+      { num: 16, part: 2, partTitle: "2. Market and Marketing", title: "Pricing Strategy, CAC & Customer Lifetime Value (LTV)", subtitle: "High-Retention B2B Unit Economics", bullets: ["Pricing Tiers: 2.0% for 30-day invoices | 3.0% for 60-day invoices | 4.2% for 90-day invoices.", "Optional ClearPay Pro Subscription (€49/mo): Reduces per-invoice fee by 0.5% for high-volume SMEs.", "Customer Acquisition Cost (CAC): €150 per onboarded SME.", "LTV: Average SME factors €5,000/mo (€80 net spread/mo) over 24 months = €1,920 LTV (LTV/CAC = 12.8x)."], kpi: "12.8x LTV to CAC Ratio" },
+
+      // PART 3: TECHNOLOGY AND OPERATIONS (Slides 17-24)
+      { num: 17, part: 3, partTitle: "3. Technology and Operations", title: "Technology Architecture & Cloud Stack", subtitle: "Bank-Grade Security, Microservices & Instant API Connectivity", bullets: ["Cloud Infrastructure: AWS Frankfurt/Warsaw EU-Central region (ISO 27001 & GDPR compliant).", "Core Integrations: Polish Ministry of Finance KSeF API, KRS/CEIDG registries, Kontomatik PSD2 API.", "Payment Rails: Elixir / Express Elixir (KIR) and SEPA Instant for 24/7 10-second disbursements.", "Frontend & Mobile: React/TypeScript web portal with 2FA biometric approval."], kpi: "99.98% Cloud Uptime SLA" },
+      { num: 18, part: 3, partTitle: "3. Technology and Operations", title: "AI Risk Scoring Engine: Debtor-Centric Underwriting", subtitle: "Evaluating the Large Corporate Payer Rather Than the Small SME", bullets: ["Core Financial Insight: When a small trucker bills Biedronka, the credit risk is Biedronka, not the trucker.", "Our AI cross-checks the debtor's NIP across KRD/BIK credit bureaus, court registries, and payment history.", "Dynamic exposure limits automatically cap how much volume can be factored per corporate debtor.", "Eliminates 90% of traditional SME loan paperwork while maintaining institutional credit quality."], kpi: "Debtor-Centric Credit Scoring" },
+      { num: 19, part: 3, partTitle: "3. Technology and Operations", title: "Fraud Prevention & KSeF Invoice Verification", subtitle: "Three-Layer Defense Against Fake or Double-Financed Invoices", bullets: ["Layer 1 (KSeF Cryptographic Hash): Verifies the invoice is officially registered with Polish tax authorities.", "Layer 2 (Automated Notice of Assignment): Sends digital legal notice (Cesja wierzytelności) to the debtor.", "Layer 3 (Central Factoring Registry): Checks anti-double-financing database across Polish factors.", "Biometric KYC (Onfido) verifies company directors in under 60 seconds during initial signup."], kpi: "Zero Double-Financing Fraud" },
+      { num: 20, part: 3, partTitle: "3. Technology and Operations", title: "Institutional Credit Insurance & Risk Mitigation", subtitle: "Partnering with Coface / Allianz Trade to Protect Capital", bullets: ["Every factored invoice is automatically insured up to 90% by Coface or Allianz Trade.", "Cost of insurance is just 0.25% of invoice face value, built directly into our unit economics.", "If a corporate debtor declares bankruptcy within 60 days, Coface reimburses 90% of principal.", "Combined with our 3% fee withhold, maximum net capital exposure on any default is near zero."], kpi: "90% Principal Insured by Coface" },
+      { num: 21, part: 3, partTitle: "3. Technology and Operations", title: "Plan of Operation: End-to-End Daily Workflow", subtitle: "Automated Straight-Through Processing (STP) From Upload to Repayment", bullets: ["09:00 AM: SME uploads invoice #FV/2026/11 → KSeF API confirms validity in 1.2 seconds.", "09:00:05 AM: AI engine approves debtor limit & assigns Coface insurance coverage.", "09:00:10 AM: Express Elixir wires 97% net cash to SME; debtor receives automated payment redirection notice.", "Day 60: Corporate debtor pays 100% into ClearPay's escrow IBAN; system reconciles ledger automatically."], kpi: "95% Straight-Through Automation" },
+      { num: 22, part: 3, partTitle: "3. Technology and Operations", title: "Treasury, Liquidity & Escrow Banking Operations", subtitle: "Managing Revolving Credit Lines & Capital Velocity", bullets: ["ClearPay operates two separate bank structures: Corporate OpEx Account & Ring-Fenced SPV Escrow Account.", "€500,000 senior revolving credit line provided by partner bank at 6.0% annual interest (0.5%/month).", "As 60-day invoices are repaid daily, liquidity automatically recycles to fund new morning invoices.", "Real-time treasury dashboard monitors capital utilization ratio (target: 85%–92% utilization)."], kpi: "6.0% p.a. Senior Debt Facility" },
+      { num: 23, part: 3, partTitle: "3. Technology and Operations", title: "Customer Service, Collections & Dispute Resolution", subtitle: "Proactive Automated Reminders & Legal Recovery Protocol", bullets: ["5 days before maturity (Day 55): Automated polite email/SMS reminder sent to corporate debtor AP team.", "Day 61 (1 day overdue): Automated follow-up + dedicated collections specialist phone call.", "Day 75 (15 days overdue): File automatically transferred to Coface legal recovery & insurance claim triggered.", "Multilingual support desk in Warsaw (Polish, English, French) for SME clients."], kpi: "99.2% On-Time Collection Rate" },
+      { num: 24, part: 3, partTitle: "3. Technology and Operations", title: "12-Month Business Schedule & Implementation Roadmap", subtitle: "Gantt Milestones From Incorporation to Profitability", bullets: ["Q1 (Months 1–3): Company registration in Warsaw, KSeF & PSD2 API sandbox build, Coface policy signing.", "Q2 (Months 4–6): Closed beta launch with 30 Warsaw logistics/IT SMEs; secure €500k bank debt facility.", "Q3 (Months 7–9): Public launch + invoicing SaaS plugin release; hit break-even in Month 8 (€750k/mo).", "Q4 (Months 10–12): Scale to 200+ active SMEs, €1M/month volume, prepare Series A expansion."], kpi: "12-Month Structured Rollout" },
+
+      // PART 4: ORGANISATION AND STAFFING (Slides 25-32)
+      { num: 25, part: 4, partTitle: "4. Organisation and Staffing", title: "Organisational Structure & Hierarchy Chart", subtitle: "Lean, High-Output FinTech Organization Based in Warsaw", bullets: ["Board of Directors: Founders + Seed Investor Representative + Independent Risk Advisor.", "Chief Executive Officer (CEO) & Chief Financial Officer (CFO): Strategic, financial, and credit governance.", "Three Operational Pillars: (1) Credit Risk & Treasury, (2) Engineering & AI Product, (3) B2B Growth & Partnerships.", "Lean Year 1 headcount of 6 full-time equivalents (FTEs) to keep fixed OpEx at €12,000/month."], kpi: "6 Lean FTEs in Year 1" },
+      { num: 26, part: 4, partTitle: "4. Organisation and Staffing", title: "Executive Leadership Team & Core Competencies", subtitle: "Combining Finance & Accounting Rigor with FinTech Execution", bullets: ["CEO & Co-Founder (Hakka Feriel Zohra): Finance & Accounting Strategist — oversees capital velocity, bank credit lines, investor relations, and unit economics.", "CTO & Co-Founder: Cloud Architect — 7+ years experience in Polish Open Banking (PSD2) and KSeF APIs.", "Head of Credit & Risk: Former B2B Factoring Underwriter — manages Coface insurance and debtor limits.", "Head of B2B Partnerships: Drives accounting firm alliances and ERP software integrations."], kpi: "Strong Finance & Tech DNA" },
+      { num: 27, part: 4, partTitle: "4. Organisation and Staffing", title: "Staffing Plan, Roles & Daily Responsibilities", subtitle: "Clear Accountability Matrix Across All Departments", bullets: ["Finance & Risk Team (2 FTEs): Daily liquidity reconciliation, SPV debt reporting,异常 invoice review.", "Tech & Product Team (2 FTEs): API uptime, KSeF XML parser maintenance, cybersecurity & UX improvements.", "Sales & Customer Success (2 FTEs): Onboarding SMEs, supporting partner accountants, handling debtor queries.", "External Legal & Compliance Counsel (Retainer): KNF reporting and AML audits."], kpi: "100% Role Accountability" },
+      { num: 28, part: 4, partTitle: "4. Organisation and Staffing", title: "Compensation, Payroll Budget & Polish Contract Structure", subtitle: "Competitive Warsaw FinTech Remuneration (B2B & Umowa o Pracę)", bullets: ["Founding Executive Team: Modest base salary in Year 1 (€2,200/mo) + high equity ownership incentive.", "Senior Engineers & Risk Specialists: Engaged via Polish B2B contracts (€2,500–€3,000/mo).", "Sales & Operations Specialists: Base salary (€1,500/mo) + performance bonus tied to factored volume.", "Total Year 1 Monthly Payroll Budget: €7,800/month (scaling to €11,500/month in Year 2)."], kpi: "€7,800/mo Year 1 Lean Payroll" },
+      { num: 29, part: 4, partTitle: "4. Organisation and Staffing", title: "Recruitment Timeline & Talent Acquisition Strategy", subtitle: "Leveraging Warsaw's Top University & FinTech Ecosystem", bullets: ["Phase 1 (Months 1–6): Core 4-person founding team + 2 operational specialists.", "Phase 2 (Months 7–18): Hire 2 additional B2B Account Executives and 1 Data Scientist after Month 8 break-even.", "University Talent Pipeline: Paid internships for top Finance & Accounting students from Vistula University.", "Employee Stock Option Pool (ESOP): 5% equity reserved to attract top technical talent without inflating cash burn."], kpi: "5% ESOP Talent Pool" },
+      { num: 30, part: 4, partTitle: "4. Organisation and Staffing", title: "Advisory Board & Strategic Institutional Partners", subtitle: "Surrounding the Startup with Industry Heavyweights", bullets: ["Academic & Strategy Advisor: Senior Faculty mentor in Entrepreneurship & Finance.", "Banking Partner: Corporate Treasury division at Bank Pekao S.A. / Santander Factoring.", "Credit Insurance Partner: Coface Poland Risk Underwriting Desk (Warsaw).", "Accounting Distribution Partner: Association of Polish Accounting Offices (Stowarzyszenie Biur Rachunkowych)."], kpi: "4 Institutional Pillars" },
+      { num: 31, part: 4, partTitle: "4. Organisation and Staffing", title: "Corporate Culture, KPIs & Performance Management", subtitle: "Data-Driven Execution Focused on Speed and Zero Default", bullets: ["North Star Metric: Net Factored Volume per Employee & Net Spread Margin (>50%).", "Operational SLA KPI: 99% of valid KSeF invoices funded in under 15 seconds.", "Risk KPI: Portfolio default loss strictly capped below 0.15% of gross volume.", "Weekly Friday Cash-Flow & Credit Committee review led by the CEO/CFO."], kpi: "< 0.15% Default Loss Cap" },
+      { num: 32, part: 4, partTitle: "4. Organisation and Staffing", title: "ESG, Ethics & Responsible B2B Lending", subtitle: "Supporting Sustainable SME Growth & Transparent Governance", bullets: ["Environmental (E): 100% paperless digital KSeF invoicing; preferential 0.2% discount for green/EV logistics SMEs.", "Social (S): Protecting small family-owned Polish businesses and freelancers from predatory loan sharks.", "Governance (G): Zero hidden fees, strict GDPR data privacy, diverse international leadership team.", "Aligned with European Union Sustainable Finance & SME Empowerment directives."], kpi: "0.2% Green SME Fee Discount" },
+
+      // PART 5: FINANCIAL PLAN (Slides 33-40)
+      { num: 33, part: 5, partTitle: "5. Financial Plan", title: "Start-up Costs & Initial Capital Requirements", subtitle: "Separating Operating CapEx/OpEx (€80k) from Working Capital Liquidity", bullets: ["Platform & KSeF/PSD2 API Development (CapEx): €28,000 | Legal, KNF Registration & Coface Deposit: €14,000.", "Office Setup, Cloud Security & Initial B2B Marketing Launch: €13,000.", "Operating Cash Buffer (6 Months OpEx Runway Reserve): €25,000 → Total Operational Start-up Costs = €80,000.", "Liquidity Pool: €70,000 equity seed + €500,000 revolving bank credit line = €570,000 invoice funding capacity."], kpi: "€80k OpEx + €500k Credit Line" },
+      { num: 34, part: 5, partTitle: "5. Financial Plan", title: "Capital Velocity Model: How €1 Works 6 Times a Year", subtitle: "The Mathematical Engine Behind ClearPay's 18% Gross Return", bullets: ["Average Invoice Maturity: 60 Days (2 Months) → Capital turns 6 times per year (12 months ÷ 2).", "Gross Fee per 60-Day Turn: 3.0% → Annualized Gross Revenue on Deployed Capital = 6 × 3.0% = 18.0% p.a.", "Less Cost of Bank Credit Line (6.0% p.a.) & Insurance/Risk (2.4% p.a.) = 9.6% Net Annualized Spread on Capital!", "Allows ClearPay to process €3.4M+ of annual invoices using just €570k of revolving liquidity."], kpi: "6x Capital Turns = 18% Gross Yield" },
+      { num: 35, part: 5, partTitle: "5. Financial Plan", title: "Unit Economics: Detailed Breakdown on a €1,000 Invoice", subtitle: "Granular Cost Accounting & 53.3% Net Spread Margin", bullets: ["Gross Factoring Fee Charged to SME (3.0% on €1,000 for 60 days): + €30.00 (100% of Revenue).", "(-) Senior Bank Debt Interest (6.0% p.a. = 1.0% for 60 days): - €10.00.", "(-) Coface Credit Insurance & Instant Wire Fee (0.25%): - €2.50 | (-) Risk Provision (0.15%): - €1.50.", "(=) Net Contribution Margin (Net Spread) per €1,000 Invoice: + €16.00 (1.60% of face value = 53.3% Margin!)."], kpi: "€16.00 Net Profit per €1,000 Factored" },
+      { num: 36, part: 5, partTitle: "5. Financial Plan", title: "Monthly Operating Expense (OpEx) Budget & Break-Even Analysis", subtitle: "Exact Mathematical Proof of Month 8 Profitability", bullets: ["Monthly Fixed OpEx (Year 1): Payroll €7,800 + Warsaw Co-working Office €1,200 + Cloud/APIs €1,200 + Marketing/Legal €1,800 = €12,000/month.", "Contribution Margin Ratio: 1.60% net profit on factored invoice volume (€16 net per €1,000).", "Break-Even Volume Formula: €12,000 Fixed OpEx ÷ 0.016 = €750,000 monthly factored invoice volume.", "€750,000/month equals just 150 SMEs factoring €5,000/month — achieved in Month 8 of Year 1!"], kpi: "€750k/mo Break-Even (150 SMEs)" },
+      { num: 37, part: 5, partTitle: "5. Financial Plan", title: "3-Year Projected Income Statement (Pro Forma P&L)", subtitle: "Scaling From €6M Volume (Year 1) to €50M Volume (Year 3)", bullets: ["Year 1 (2027): €6.0M Volume | €180k Gross Fee Revenue | €96k Net Spread | €111k OpEx → Net Income: -€15,000.", "Year 2 (2028): €22.0M Volume | €660k Gross Fee Revenue | €352k Net Spread | €157k OpEx → Net Income: +€195,000.", "Year 3 (2029): €50.0M Volume | €1.50M Gross Fee Revenue | €800k Net Spread | €180k OpEx → Net Income: +€620,000.", "Year 3 Net Profit Margin reaches 41.3% of gross fees due to high software operating leverage."], kpi: "€620,000 Net Profit in Year 3" },
+      { num: 38, part: 5, partTitle: "5. Financial Plan", title: "Projected Cash Flow Statement & Working Capital Cycle", subtitle: "Ensuring Daily Solvency & Zero Liquidity Bottlenecks", bullets: ["Operating Cash Flow: Positive monthly cash generation starting Month 8 (+€18,500/mo by Month 12).", "Financing Cash Flow: €150k Seed Equity inflow (Month 1) + €500k Senior Credit Facility (expanded to €2.5M in Y2).", "Self-Liquidating Asset Base: Every factored invoice converts back to 100% cash within 30–60 days.", "Cumulative Ending Operational Cash Balance grows from €65k (Y1) to €245k (Y2) and €810k (Y3)."], kpi: "€810k Cash Balance by Year 3" },
+      { num: 39, part: 5, partTitle: "5. Financial Plan", title: "Pro Forma Balance Sheet (Years 1–3)", subtitle: "Clean Asset-Backed Balance Sheet & Strong Solvency Ratios", bullets: ["Assets (Year 2): Cash & Escrow €245k + Short-Term Factored Receivables €3.6M + Software CapEx €22k = €3.87M.", "Liabilities (Year 2): Revolving Bank Credit Facility €2.7M + Trade Payables €42k = €2.74M.", "Shareholders' Equity (Year 2): Paid-in Seed Capital €150k + Retained Earnings €180k + Mezzanine = €1.13M.", "Healthy Debt-to-Equity & 100% short-term asset coverage backed by Coface investment-grade receivables."], kpi: "100% Asset-Backed Receivables" },
+      { num: 40, part: 5, partTitle: "5. Financial Plan", title: "Student Seed Investment Plan, Cap Table & Exit Strategy", subtitle: "The Ask: €150,000 Seed Round for 15% Equity at €1.0M Post-Money Valuation", bullets: ["Cap Table Post-Seed: Founders 80% | Seed Investors 15% (€150,000) | Employee Option Pool (ESOP) 5%.", "Use of €150k Seed Funds: €80k Startup & Tech Launch + €70k Junior Equity First-Loss Reserve to unlock €500k Bank Line.", "Investor ROI: 4.9x projected return in 3 years (based on 8x P/E multiple = €4.96M valuation in Year 3).", "Exit Pathways: Acquisition by major Polish/European banking group (PKO, Santander, ING) or Series A FinTech scale-up."], kpi: "4.9x Projected 3-Year Investor ROI" }
+    ];
+
+    function renderSlides(filterPart = 'ALL') {
+      const container = document.getElementById('all-slides-grid');
+      container.innerHTML = '';
+
+      const filtered = filterPart === 'ALL' ? slidesData : slidesData.filter(s => s.part === filterPart);
+
+      filtered.forEach((s, idx) => {
+        const bgImg = bgPhotos[(s.num - 1) % bgPhotos.length];
+        const card = document.createElement('div');
+        card.className = 'slide-page bg-white rounded-3xl shadow-md border border-slate-200 overflow-hidden relative flex flex-col justify-between p-6 sm:p-10';
+        card.innerHTML = `
+          <!-- Subtle Bright Photo Background -->
+          <div class="absolute inset-0 opacity-10 bg-cover bg-center pointer-events-none" style="background-image: url('${bgImg}');"></div>
+          <div class="absolute inset-0 bg-gradient-to-br from-white/95 via-white/90 to-sky-50/90 pointer-events-none"></div>
+
+          <!-- Top Slide Header -->
+          <div class="relative z-10 flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="px-3 py-1 rounded-lg bg-sky-600 text-white font-extrabold text-xs">SLIDE ${s.num} / 40</span>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-sky-700 bg-sky-100 px-3 py-1 rounded-lg">${s.partTitle}</span>
+            </div>
+            <div class="text-xs font-bold text-slate-500">
+              Vistula University • Hakka Feriel Zohra (ID: 78468)
+            </div>
+          </div>
+
+          <!-- Center Slide Content -->
+          <div class="relative z-10 my-auto py-6 grid md:grid-cols-12 gap-6 items-center">
+            <div class="md:col-span-8 space-y-3">
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">${s.title}</h3>
+              <p class="text-sm sm:text-base font-bold text-sky-700">${s.subtitle}</p>
+              <ul class="space-y-2.5 pt-2">
+                ${s.bullets.map(b => `
+                  <li class="flex items-start gap-2.5 text-sm sm:text-base text-slate-700 font-medium">
+                    <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-extrabold text-xs flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                    <span>${b}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+
+            <!-- Right Visual Callout Card -->
+            <div class="md:col-span-4 bg-white/90 backdrop-blur rounded-2xl p-5 border border-sky-200 shadow-sm flex flex-col justify-between space-y-4">
+              <img src="${bgImg}" alt="Slide Visual" class="w-full h-32 object-cover rounded-xl border border-slate-100" />
+              <div class="bg-sky-50 rounded-xl p-3.5 border border-sky-100 text-center">
+                <span class="text-[11px] font-bold uppercase text-sky-600 block">Key Financial / Strategic Metric</span>
+                <span class="text-base sm:text-lg font-extrabold text-slate-900">${s.kpi}</span>
+              </div>
+              <button onclick="switchTab('sme')" class="no-print w-full py-2 px-3 rounded-xl bg-gradient-to-r from-sky-600 to-emerald-600 text-white font-bold text-xs shadow hover:opacity-95 transition">
+                🔗 Open Live Interactive Prototype
+              </button>
+            </div>
+          </div>
+
+          <!-- Bottom Slide Footer -->
+          <div class="relative z-10 border-t border-slate-200 pt-3 flex flex-wrap items-center justify-between text-xs text-slate-500 font-semibold">
+            <span>ClearPay Financial Sp. z o.o. • Instant B2B Factoring & Working Capital</span>
+            <span>Interactive Prototype Integrated • Page ${s.num} of 40</span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterSection(part) {
+      ['ALL', 1, 2, 3, 4, 5].forEach(p => {
+        const btn = document.getElementById('sec-' + p);
+        if (btn) {
+          btn.className = p === part
+            ? 'px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white'
+            : 'px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200';
+        }
+      });
+      renderSlides(part);
+    }
+
+    function printFullDeck() {
+      switchTab('slides');
+      filterSection('ALL');
+      setTimeout(() => {
+        window.print();
+      }, 300);
+    }
+
+    // Initialize on load
+    updateFactoringCalc();
+    updateInvestorCalc();
+    renderSlides('ALL');
+  </script>
+</body>
+</html>
